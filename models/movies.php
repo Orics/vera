@@ -20,6 +20,7 @@
                 $movie->Country = $row["Country"];
                 $movie->ReleaseDate = $row["ReleaseDate"];
                 $movie->Duration = $row["Duration"];
+                $movie->Content = $row["Content"];
                 $movie->Status = "1";
                 $movie->TotalStars =  $row["TotalStars"];
                 $movie->NumberVote =  $row["NumberVote"];
@@ -52,6 +53,7 @@
                 $movie->Country = $row["Country"];
                 $movie->ReleaseDate = $row["ReleaseDate"];
                 $movie->Duration = $row["Duration"];
+                $movie->Content = $row["Content"];
                 $movie->Status = "1";
                 $movie->TotalStars =  $row["TotalStars"];
                 $movie->NumberVote =  $row["NumberVote"];
@@ -82,6 +84,7 @@
                 $movie->Country = $row["Country"];
                 $movie->ReleaseDate = $row["ReleaseDate"];
                 $movie->Duration = $row["Duration"];
+                $movie->Content = $row["Content"];
                 $movie->Status = $row["Status"];
                 $movie->TotalStars =  $row["TotalStars"];
                 $movie->NumberVote =  $row["NumberVote"];
