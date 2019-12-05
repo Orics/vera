@@ -2,21 +2,27 @@
 
     $controller = "movies";
     $page = "showing-now";
-    $params = [];
-
+    $param;
+    $values = [];
     if( isset($_GET["url"]) ){
             $url = explode("/", filter_var(trim($_GET["url"], "/")));
             if(isset($url[0])){
                 $controller = $url[0];
                 unset($url[0]);
             }
+
             if(isset($url[1])){
                 $page = $url[1];
                 unset($url[1]);
             }
 
+            if(isset($url[2])){
+                $param = $url[2];;
+                unset($url[2]);
+            }
+
             if(isset($url)){
-                $params = array_values($url);
+                $values = $url;
             }
     }
 
@@ -25,6 +31,5 @@
     }
     else{
         echo "404 not found";
-        //echo "./controllers/".$controller."/".$page.".php";
     }
 ?>
